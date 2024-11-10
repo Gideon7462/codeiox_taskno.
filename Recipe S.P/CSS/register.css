@@ -1,0 +1,247 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-container {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Labels and Inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus {
+    border-color: #5b7db1;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  button {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #5b7db1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4a6a91;
+  }
+  
+  /* Link to login page */
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+  }
+  
+  p a {
+    color: #5b7db1;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+/* For devices with a maximum width of 768px (Tablets and smaller screens) */
+@media screen and (max-width: 768px) {
+    /* Adjust header navigation links for smaller screens */
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    header nav a {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+  
+    /* Adjust form container for smaller screens */
+    .form-container {
+      max-width: 90%; /* Ensure the container does not get too wide */
+      padding: 20px;
+    }
+  
+    /* Adjust the title */
+    .form-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust form labels */
+    label {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+  
+    /* Adjust input fields */
+    input {
+      padding: 0.8rem;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    /* Adjust register button */
+    button {
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  
+    /* Adjust registration link and text for better spacing */
+    p {
+      font-size: 1rem;
+    }
+  
+    p a {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For devices with a maximum width of 480px (Mobile phones) */
+  @media screen and (max-width: 480px) {
+    /* Adjust header navigation links */
+    header nav {
+      padding: 8px;
+    }
+  
+    header nav a {
+      margin: 8px 0;
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust form container */
+    .form-container {
+      max-width: 95%; /* Allow container to take up more space */
+      padding: 15px;
+    }
+  
+    /* Adjust title */
+    .form-container h2 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust form labels */
+    label {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+  
+    /* Adjust input fields */
+    input {
+      padding: 0.8rem;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+  
+    /* Adjust register button */
+    button {
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  
+    /* Adjust registration link */
+    p {
+      font-size: 0.9rem;
+    }
+  
+    p a {
+      font-size: 0.9rem;
+    }
+  }
+  
+ 

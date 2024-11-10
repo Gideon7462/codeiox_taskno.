@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../CSS/profile.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./login.html">Login</a>
+      <a href="./register.html">Register</a>
+      <a href="./profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Profile Container -->
+  <div class="profile-container">
+    <!--example of a  user profile-->
+    <!-- Profile Picture -->
+    <img src="../images/Screenshot 2024-11-10 164918.png" alt="User Profile Picture" class="profile-picture">
+
+    <!-- Profile Information -->
+    <div class="profile-info">
+      <h1>Gideon Obiri</h1>
+      <p>Food lover, recipe creator, and enthusiastic home cook.</p>
+      <button class="edit-profile-btn">Edit Profile</button>
+    </div>
+
+    <!-- User Recipes Section -->
+    <div class="user-recipes">
+      <h2>My Recipes</h2>
+
+      <!-- Button to Add New Recipe -->
+      <button id="add-recipe-btn" class="add-recipe-btn">Add New Recipe</button>
+
+      <!-- New Recipe Form (Initially Hidden) -->
+      <div id="new-recipe-form" class="new-recipe-form" style="display: none;">
+        <h3>Add a New Recipe</h3>
+        <form id="recipe-form">
+          <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+          <input type="url" id="recipe-image" placeholder="Recipe Image URL" required>
+          <textarea id="recipe-description" placeholder="Recipe Description" required></textarea>
+          <button type="submit" class="submit-recipe-btn">Submit Recipe</button>
+        </form>
+        <button id="cancel-add-recipe" class="cancel-add-recipe">Cancel</button>
+      </div>
+
+      <!-- Recipe List -->
+      <div class="recipe-list">
+        <!-- Existing Recipe Cards (These will be populated dynamically) -->
+      <!-- Example Recipe Card -->
+  <div class="recipe-card">
+    <img src="../images/Screenshot 2024-11-10 164608.png" alt="Recipe Image" class="recipe-image">
+    <h3 class="recipe-title">Spaghetti Carbonara</h3>
+    <p class="recipe-description">A creamy, delicious classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
+    <a href="../HTML/recipe-detail.html?recipeId=1" class="view-recipe-link">View Recipe</a>
+    <button class="like-btn" data-id="1">Like</button>
+    <button class="save-btn" data-id="1">Save to Favorites</button>
+  </div>
+  <div class="recipe-card">
+    <img src="../images/Screenshot 2024-11-10 164450.png" alt="Recipe Image" class="recipe-image">
+    <h3 class="recipe-title">Chicken Tikka Masala</h3>
+    <p class="recipe-description">A flavorful, spicy Indian-inspired chicken dish with tender chicken pieces in a rich, creamy tomato-based sauce, flavored with aromatic spices.</p>
+    <a href="../HTML/recipe-detail.html?recipeId=2" class="view-recipe-link">View Recipe</a>
+    <button class="like-btn" data-id="2">Like</button>
+    <button class="save-btn" data-id="2">Save to Favorites</button>
+  </div>
+  <div class="recipe-card">
+    <img src="../images/Screenshot 2024-11-10 163102.png" alt="Recipe Image" class="recipe-image">
+    <h3 class="recipe-title">Avocado toast</h3>
+    <p class="recipe-description">A simple yet delicious breakfast or snack option with mashed avocado on toasted bread, often topped with seasonings, herbs, and sometimes an egg.</p>
+    <a href="../HTML/recipe-detail.html?recipeId=3" class="view-recipe-link">View Recipe</a>
+    <button class="like-btn" data-id="3">Like</button>
+    <button class="save-btn" data-id="3">Save to Favorites</button>
+  </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Recipe Sharing Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="../JS/profile.js"></script>
+</body>
+</html>
+

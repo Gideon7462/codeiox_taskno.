@@ -1,0 +1,323 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  a {
+    color: #5b7db1;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* Profile Container */
+  .profile-container {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Profile Picture */
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5b7db1;
+    margin-bottom: 15px;
+  }
+  
+  /* Profile Information */
+  .profile-info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .profile-info .edit-profile-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #5b7db1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .profile-info .edit-profile-btn:hover {
+    background-color: #4a6a91;
+  }
+  
+  /* User Recipes Section */
+  .user-recipes {
+    margin-top: 30px;
+  }
+  
+  .user-recipes h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Recipe List */
+  .recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .recipe-card p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+/* New Recipe Form */
+.new-recipe-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .new-recipe-form input,
+  .new-recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .new-recipe-form .submit-recipe-btn {
+    padding: 10px 20px;
+    background-color: #5b7db1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-recipe-form .submit-recipe-btn:hover {
+    background-color: #4a6a91;
+  }
+  
+  .new-recipe-form .cancel-add-recipe {
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-recipe-form .cancel-add-recipe:hover {
+    background-color: #d32f2f;
+  }
+  
+/* For devices with a maximum width of 768px (Tablets and smaller screens) */
+@media screen and (max-width: 768px) {
+    /* Adjust header navigation links for smaller screens */
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    header nav a {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+  
+    /* Adjust profile container for smaller screens */
+    .profile-container {
+      max-width: 90%; /* Ensure the container does not get too wide */
+      padding: 15px;
+    }
+  
+    /* Adjust profile picture */
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+    }
+  
+    /* Adjust profile info section */
+    .profile-info h1 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-info p {
+      font-size: 1rem;
+    }
+  
+    /* Adjust edit profile button */
+    .edit-profile-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    /* Adjust user recipes section layout */
+    .user-recipes {
+      margin-top: 20px;
+    }
+  
+    .recipe-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  
+    .recipe-card {
+      padding: 12px;
+    }
+  
+    .recipe-card h3 {
+      font-size: 1rem;
+    }
+  
+    footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For devices with a maximum width of 480px (Mobile phones) */
+  @media screen and (max-width: 480px) {
+    /* Adjust header navigation links */
+    header nav {
+      padding: 8px;
+    }
+  
+    header nav a {
+      margin: 8px 0;
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust profile container for smaller screens */
+    .profile-container {
+      max-width: 95%; /* Allow container to take up more space */
+      padding: 12px;
+    }
+  
+    /* Adjust profile picture for mobile */
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+    }
+  
+    /* Adjust profile information font size */
+    .profile-info h1 {
+      font-size: 1.3rem;
+    }
+  
+    .profile-info p {
+      font-size: 0.9rem;
+    }
+  
+    /* Adjust edit profile button */
+    .edit-profile-btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+    }
+  
+    /* Adjust user recipes grid to single column */
+    .recipe-list {
+      grid-template-columns: 1fr; /* 1 column layout */
+    }
+  
+    .recipe-card {
+      padding: 10px;
+    }
+  
+    .recipe-card h3 {
+      font-size: 0.9rem;
+    }
+  
+    footer {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Sharing Platform</title>
+  <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./login.html">Login</a>
+      <a href="./register.html">Register</a>
+      <a href="./profile.html">Profile</a>
+    </nav>
+  </header>
+  
+  <main id="recipe-list">
+    <!-- Recipes will be dynamically loaded here -->
+      <!-- Example Recipe Card -->
+    <div class="recipe-card">
+      <img src="../images/Screenshot 2024-11-10 164608.png" alt="Recipe Image" class="recipe-image">
+      <h3 class="recipe-title">Spaghetti Carbonara</h3>
+      <p class="recipe-description">A creamy, delicious classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
+      <a href="../HTML/recipe-detail.html?recipeId=1" class="view-recipe-link">View Recipe</a>
+      <button class="like-btn" data-id="1">Like</button>
+      <button class="save-btn" data-id="1">Save to Favorites</button>
+    </div>
+    <div class="recipe-card">
+      <img src="../images/Screenshot 2024-11-10 164450.png" alt="Recipe Image" class="recipe-image">
+      <h3 class="recipe-title">Chicken Tikka Masala</h3>
+      <p class="recipe-description">A flavorful, spicy Indian-inspired chicken dish with tender chicken pieces in a rich, creamy tomato-based sauce, flavored with aromatic spices.</p>
+      <a href="../HTML/recipe-detail.html?recipeId=2" class="view-recipe-link">View Recipe</a>
+      <button class="like-btn" data-id="2">Like</button>
+      <button class="save-btn" data-id="2">Save to Favorites</button>
+    </div>
+    <div class="recipe-card">
+      <img src="../images/Screenshot 2024-11-10 163102.png" alt="Recipe Image" class="recipe-image">
+      <h3 class="recipe-title">Avocado toast</h3>
+      <p class="recipe-description">A simple yet delicious breakfast or snack option with mashed avocado on toasted bread, often topped with seasonings, herbs, and sometimes an egg.</p>
+      <a href="../HTML/recipe-detail.html?recipeId=3" class="view-recipe-link">View Recipe</a>
+      <button class="like-btn" data-id="3">Like</button>
+      <button class="save-btn" data-id="3">Save to Favorites</button>
+    </div>
+  </main>
+
+  <!-- Daily News Section -->
+  <section id="daily-news">
+    <h2>Daily News in the Hotel Industry</h2>
+    <ul id="news-list">
+      <!-- News items will be inserted here -->
+    </ul>
+  </section>
+
+  <script src="../JS/app.js"></script>
+  <script src="../JS/dailynews.js"></script> <!-- New JS file for handling news -->
+</body>
+</html>
