@@ -1,0 +1,100 @@
+/* Resume Page Styles */
+#resume {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007acc;
+    text-align: center;
+}
+
+#resume p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#resume a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resume-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-section li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+}
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

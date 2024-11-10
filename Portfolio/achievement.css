@@ -1,0 +1,100 @@
+/* Achievements Page Styles */
+#achievements {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#achievements h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007acc;
+    text-align: center;
+}
+
+#achievements p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+}
+
+.achievement {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.achievement h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.achievement p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.achievement a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.achievement a:hover {
+    text-decoration: underline;
+}
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+}
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

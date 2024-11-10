@@ -1,0 +1,92 @@
+/* FAQ and Privacy Policy Page Styles */
+#faq, #privacy {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#faq h1, #privacy h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007acc;
+    text-align: center;
+}
+
+.faq-item, .policy-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.faq-item h2, .policy-section h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.faq-item p, .policy-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-item a, .policy-section a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faq-item a:hover, .policy-section a:hover {
+    text-decoration: underline;
+}
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007acc;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
